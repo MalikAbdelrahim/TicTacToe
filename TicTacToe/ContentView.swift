@@ -8,6 +8,18 @@ struct ContentView: View
     {
         let borderSize = CGFloat(5)
         
+        Text(gameState.turnText())
+            .font(.title)
+            .bold()
+            .padding()
+        Spacer()
+        
+        Text(gameState.turnText())
+            .font(.title)
+            .bold()
+            .padding()
+        Spacer()
+        
         VStack(spacing: borderSize)
         {
             ForEach(0...2, id: \.self)

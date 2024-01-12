@@ -15,6 +15,12 @@ class GameState: ObservableObject
     {
         resetBoard()
     }
+    
+    func turnText() -> String
+    {
+        return turn == Tile.Cross ? "Turn: X" : "Turn: O"
+    }
+    
     func placeTile(_ row: Int,_ column: Int)
     {
         if(board[row][column].tile != Tile.Empty)
@@ -32,7 +38,7 @@ class GameState: ObservableObject
             {
                 noughtsScore += 1
             }
-            let winner = turn == Tile.Cross ? "Crosses" : "Noughts"
+            let winner = turn == Tile.Cross ? "Crosses " : "Zeros "
             alertMessage = winner + "Win!"
             showAlert = true
         }
@@ -40,7 +46,27 @@ class GameState: ObservableObject
         {
             turn = turn == Tile.Cross ? Tile.Nought : Tile.Cross
         }
+        
+        if(checkForDraw())
+        {
+            alertMessage = "Draw"
+            showAlert = true
+        }
 
+    }
+    func checkForDraw() -> Bool
+    {
+        for row in board
+        {
+            for cell in row
+            {
+                if cell.tile == Tile.Empty
+                {
+                    return false
+                }
+            }
+        }
+        return true
     }
     func checkForVictory() -> Bool
     {
@@ -62,7 +88,7 @@ class GameState: ObservableObject
         {
             return true
         }
-        if isTurnTile(1,0) && isTurnTile(1,2) && isTurnTile(1,2)
+        if isTurnTile(1,0) && isTurnTile(1,1) && isTurnTile(1,2)
         {
             return true
         }
