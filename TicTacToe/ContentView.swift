@@ -14,7 +14,7 @@ struct ContentView: View
             .padding()
         Spacer()
         
-        Text(gameState.turnText())
+        Text(String(format: "Crosses: %d", gameState.crossesScore))
             .font(.title)
             .bold()
             .padding()
@@ -61,6 +61,12 @@ struct ContentView: View
                 }
             )
         }
+        
+        Text(String(format: "X's: %d", gameState.noughtsScore))
+            .font(.title)
+            .bold()
+            .padding()
+        Spacer()
     }
 }
 
