@@ -12,6 +12,7 @@
 		847D78132B51A18C002D6548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847D78122B51A18C002D6548 /* Assets.xcassets */; };
 		847D78162B51A18C002D6548 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847D78152B51A18C002D6548 /* Preview Assets.xcassets */; };
 		84DDC3C52B51B97D00668295 /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDC3C42B51B97D00668295 /* cell.swift */; };
+		84DDC3C72B51D1C600668295 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDC3C62B51D1C600668295 /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		847D78122B51A18C002D6548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847D78152B51A18C002D6548 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84DDC3C42B51B97D00668295 /* cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
+		84DDC3C62B51D1C600668295 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				84DDC3C42B51B97D00668295 /* cell.swift */,
 				847D780E2B51A18B002D6548 /* TicTacToeApp.swift */,
 				847D78102B51A18B002D6548 /* ContentView.swift */,
+				84DDC3C62B51D1C600668295 /* GameState.swift */,
 				847D78122B51A18C002D6548 /* Assets.xcassets */,
 				847D78142B51A18C002D6548 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				847D78112B51A18B002D6548 /* ContentView.swift in Sources */,
+				84DDC3C72B51D1C600668295 /* GameState.swift in Sources */,
 				84DDC3C52B51B97D00668295 /* cell.swift in Sources */,
 				847D780F2B51A18B002D6548 /* TicTacToeApp.swift in Sources */,
 			);
