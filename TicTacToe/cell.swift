@@ -1,11 +1,6 @@
-//
-//  cell.swift
-//  TicTacToe
-//
-//  Created by Malik Abdelrahim on 1/12/24.
-//
 
 import Foundation
+import SwiftUI
 
 struct cell
 {
@@ -23,7 +18,7 @@ struct cell
                 return ""
         }
     }
-    func tileColro() -> Color
+    func tileColor() -> Color
     {
         switch(tile)
         {
