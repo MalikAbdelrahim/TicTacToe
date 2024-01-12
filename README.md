@@ -1,1 +1,1 @@
-This is a tictactoe project in xcode follow a example
+This is a tictactoe project in xcode using swiftui
